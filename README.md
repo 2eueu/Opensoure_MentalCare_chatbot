@@ -1,23 +1,69 @@
-# ❄️ Opensoure_MentalCare_chatbot 
-숙명여자대학교 오픈소스프로그래밍 과목에서 구현한 '눈송이 멘탈케어 챗봇' 소스코드입니다. 저희 팀은 학교의 상징인 눈송이를 모티브로 눈송이 사용자들의 정신적인 부분을 케어해주는 전담 챗봇을 구현하였습니다. 
+# ❄️ Nunsong MentalCare Chatbot
 
-### ⏱️ 개발기간
-2024.05.15 ~ 2024.06.21
+A mental care chatbot created as a team project for the **Opensource Programming** course at **Sookmyung Women's University**.  
+Inspired by our school’s symbol, the **snowflake**, our chatbot character **Nunsong** offers mental health support through empathetic conversation, emotion analysis, and music therapy.
 
-## 🩵 기능 소개
-1. 대화기능(챗봇)
-2. 감정분석기능
-3. 대화 초기화 기능
-4. 응답시간 측정 기능
-5. 대화 요약(로그) 기능
-6. 로그 pdf파일로 저장 기능
-7. 음악 재생 기능
-8. 심리 관련 사이트 답변 기능
-9. 우울증검사 기능
-10. 스트레스검사 기능
+<p align="center">
+  <img src="./assets/main.png" alt="Nunsong Chatbot Main UI" width="600"/>
+</p>
 
-### 🩵 개발자 소개
-김다솔
-이가은
-김연서
-김성현
+---
+
+## 🧠 Key Features
+
+- 💬 **Conversational Chatbot** powered by sentence similarity
+- 🎭 **Emotion Detection** to analyze user mood
+- 🧠 **Stress & Depression Self-Diagnosis Tools**
+- 📝 **Chat Log Save & PDF Download**
+- 🎧 **Music Therapy Playlist** playback inside UI
+- 🔁 **Session Reset** + ⏱️ **Response Time Tracker**
+- 🔗 **University Resource Redirection**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language**: Python
+- **Framework**: Streamlit
+- **NLP**: Sentence Transformers (`all-MiniLM-L6-v2`)
+- **Frontend**: Streamlit Custom UI (image, audio, layout)
+- **Data**: Custom CSV Q&A with semantic matching
+
+---
+
+## 🖼️ Preview
+
+| Chatbot UI | Music Playlist | Dataset Structure |
+|------------|----------------|-------------------|
+| ![main](./assets/main.png) | ![playlist](./assets/playlist.png) | ![dataset](./assets/dataset.png) |
+
+---
+
+## 🎬 Demo Video
+
+[▶️ Click here to watch the demo](https://www.youtube.com/watch?v=A2mP6LT728U)
+
+---
+
+## 📌 Project Context
+
+- 📚 **Course**: Opensource Programming  
+- 🏫 **University**: Sookmyung Women’s University  
+- 📅 **Semester**: Spring 2024  
+- 👩‍💻 **My Role**:
+  - Data preprocessing and embedding setup
+  - Similarity model integration
+  - Streamlit UI layout + music playback function
+
+---
+
+## 🚀 How to Run
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+2. Start the Streamlit app:
+```bash
+streamlit run app.py
+```
